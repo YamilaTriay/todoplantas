@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Todo Plantas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Todo Plantas</a>
+                <button class="navbar-toggler" style="margin-right:5px !important;" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse top_nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto ">
+                        <li class="nav-item "><a href="./cuidados.html" class="nav-link">Tips y cuidados</a>
+                        </li>
+                        <li class="nav-item "><a href="./galeria.html" class="nav-link">Galeria</a>
+                        </li>
+                        <li class="nav-item "><a href="./acercadenosotros.html" class="nav-link">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="formularioSection">
+            <div class="formularioDiv">
+                <div class="registerForm">
+                    Registrate
+                </div>
+                <form action="#">
+                    <div class="userDetails">
+                        <div class="inputBox">
+                            <span class="details">Nombre</span>
+                            <input type="text" placeholder="Introduzca su nombre">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Apellido</span>
+                            <input type="text" placeholder="Introduzca su apellido">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Correo</span>
+                            <input type="email" placeholder="Introduzca su correo">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Telefono</span>
+                            <input type="telefono" placeholder="Introduzca su número">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Usuario</span>
+                            <input type="password" placeholder="Introduzca su usuario">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Contraseña</span>
+                            <input type="contraseña" placeholder="Introduzca contraseña">
+                        </div>
+                    </div>
+                    <div class="generoDiv">
+                        <input type="radio" name="Género" id="dot-1">
+                        <input type="radio" name="Género" id="dot-2">
+                        <input type="radio" name="Género" id="dot-3">
+                        <span class="generoTitulo">Género:</span>
+                        <div class="categoria">
+                            <label for="dot-1">
+                                <span class="dot una"></span>
+                                <span class="genero">Masculino</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot dos"></span>
+                                <span class="genero">Femenino</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot tres"></span>
+                                <span class="genero">Prefiero no decirlo</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="boton-1">
+                        <select name="select" id="">
+                            <option value="">Pais</option>
+                            <option value="">Argentina</option>
+                            <option value="">Chile</option>
+                            <option value="">Uruguay</option>
+                            <option value="">Otro</option>
+                        </select>
+                    </div>
+                        <div class="containerContacto">
+                            <h3>Dejanos tu consulta</h3>
+                            <textarea class="botonRegister" name="" id="" cols="50" rows="5"></textarea>
+                        </div>
+                        <div class="boton">
+                            <input type="submit" value="Registrarse">
+                        </div>
+                    <div>
+                </form>
+            </div>
+        </section>
+        <section class="iframeSection">
+            <div class="divIframe">
+                <h3>Donde nos encontramos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.576538731166!2d-58.407669784253024!3d-34.76625857362441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd31091675acb%3A0xb5376eeadd085b77!2sRas%20Vidha%20Boutique%20Vivero%20de%20cactus%20y%20suculentas%20%F0%9F%8C%B5%F0%9F%AA%B4%F0%9F%8E%81!5e0!3m2!1ses-419!2sar!4v1669313526417!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="Contacto">
+        <section class="contacto">
+            <p>Seguinos en nuestras redes.</p>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><img class="logos" src="../img/facebook.png"
+                        alt="Icono de facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="logos" src="../img/instagram.png"
+                        alt="Icono de Instagram"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="logos" src="../img/whatsapp.png"
+                        alt="Icono de Whatsapp"></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

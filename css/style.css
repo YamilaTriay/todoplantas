@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2? family= Barlow:ital,wght@0,100;0,400;0,700;1,200;1,500 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238,238,238);
+    width: 100%;
+    height: 100%;
+}
+/*-------------HEADER------------*/
+header{
+    background-color: rgb(238,238,238);
+    position: sticky;
+    top:0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-link a:hover{
+    color: rgb(8, 109, 87);
+}
+
+.navbar-brand{
+    padding-left: 20px;
+    font-size: 40px;
+    font-family:'Barlow', sans-serif; 
+    font-weight: 700;
+    color: rgb(53,86,77)
+}
+
+.navbar-light .navbar-brand{
+    color: rgb(87,133,123)
+}
+
+.navbar-light .navbar-nav .nav-link{
+    text-decoration: none;
+    color: rgb(138,119,126);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 15px 10px 15px;
+}
+/*
+header h1{
+    padding-left: 20px;
+    font-size: 40px;
+    font-family:'Barlow', sans-serif; 
+    font-weight: 700;
+    color: rgb(53,86,77)
+}*/
+
+header nav ul{
+    list-style: none;
+    font-size: 18px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+/*header nav ul li{
+    /*display: inline-block;  ESTO LO SAQUE PARA APLICAR FLEXBOX*/   
+    /*margin: 15px;
+    margin: 10px 15px 10px 15px;
+} */
+
+/*header nav ul li a{
+    text-decoration: none;
+    color: rgb(138,119,126);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+} */
+
+
+/*--------------MAIN--------------*/
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    color: aliceblue;
+    /*text-align: center;*/
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
+}
+
+.herodiv{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h2{
+font-family: 'EB Garamond', serif;
+color: aliceblue;
+text-align: left;
+margin: 0 0;
+font-size: xx-large;
+}
+
+section h2{
+    font-family:'Barlow', sans-serif;
+    color: rgb(53,86,77) 
+} 
+
+.subtitulos{
+    padding: 30px;
+    text-align: center;
+    color: rgb(53,86,77);
+    font-size: 1.50rem;
+}
+
+.subtitulos:hover{
+    color: rgb(87,133,123);
+}
+
+.imagenesTarjetas{
+    width: 310px;
+    height: 465px;
+}
+
+.imagenesTarjetas:hover{
+    opacity: 0.7;
+}
+
+.imageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.imageContainer div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/* CLASE- VIDEOS**/
+
+h4{
+    text-align: center;
+}
+
+/*ESTO NO VA!!
+.botonwhapp img{
+    position: fixed;
+    bottom: 80px;
+    right: 90px;
+    width: 50px;
+    height: 50px;
+}*/
+
+/*----------------FOOTER------------*/
+
+.contacto{
+    background-color: rgb(193,217,212);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+.logos{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    right: 80px;
+}
+
+
+.contacto p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+
+
+
+
+
+/*----------GALERIA---------*/
+
+/*----------MAIN----------*/
+
+.galeriaInfo{
+    width: 100%;
+    height: 90vh;
+    color: aliceblue;
+    /*color: rgb(138,119,126);*/
+    background-image: url("../img/interiorbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.galeriaInfo .galeriaDiv h2{
+font-family: 'EB Garamond', serif;
+    color: aliceblue;
+    font-weight: 800;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 45px;
+}
+
+.plantasExterior div h2{
+    color: aliceblue;
+    font-weight: 700;
+    position: relative;
+    top: 95px;
+    font-size: 32px;
+}
+
+/*
+.galeriaInfo h2{
+    font-size: 30px;
+    border: 2px solid rgb(53,86,77);
+    display: inline-block;
+    padding: 20px;
+}
+*/
+
+/*
+.galeriaInfo{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+.galeriaInfo h2{
+    font-size: 25px;
+
+}
+
+.galeriaInfo p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.galeriaInfo a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+
+}
+
+.containerCardboard{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    background-color: rgba(42, 100, 84, 0.616);
+    border-radius:25px;
+    margin: 50px auto
+}
+
+.imagenesTarjetas{
+    width: 305px;
+    height: 420px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+
+.containerGaleria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.containerGaleria h2{
+    background-color: rgb(123,136,134);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.containerGaleria div{
+    border: 1px solid gray;
+    width: 450px;
+    height: 640px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+}
+
+.containerGaleria div h4{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+
+/* (ESTOS BOTONES LOS SAQUE)
+.containerGaleria div a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-weight: bold;
+} */
+
+.parrafoGaleria{
+    color: white;
+    text-align: center;
+}
+
+.plantasExterior{
+    width: 100%;
+    height: 80vh;
+    color: rgb(138,119,126);
+    text-align: center;
+    background-image: url("../img/outside.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.plantasExterior div{
+    padding: 310px;
+    color: aliceblue;
+}
+
+.cactusySuculentas{
+    width: 100%;
+    height: 80vh;
+    color: rgb(138,119,126);
+    text-align: center;
+    background-image: url("../img/suculentdecoration.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.cactusySuculentas div{
+    padding: 150px;
+}
+
+.cactusySuculentas div h2{
+    font-weight: 700;
+    position: relative;
+    top: 95px;
+    font-size: 32px;
+}
+
+
+/*----------------TIPS Y CUIDADOS-------------*/
+
+
+
+.imagenCuidados{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    
+}
+
+
+.cuidadosSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1000px;
+    height: 500px;
+    background-color: rgba(42, 100, 84, 0.616);
+    border-radius: 45px;
+    margin: 50px auto;
+    padding: 30px;
+    color: aliceblue;
+
+}
+
+.parrafoCuidados, .cuidadosSection h3{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cuidadosSection h3{
+    margin-bottom: -20px;
+    font-family:'Barlow', sans-serif;
+}
+
+.parrafoCuidados{
+    font-size: large;
+}
+
+.cuidadosDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/*------------SUB-SECCIONES DE CUIDADOS con GRID-----------*/
+.claseInterior{
+    margin-top: 60px;
+    margin-block-end: 60px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 60px;
+    justify-items: center;
+}
+
+.claseInterior img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+/*---------------------ACERCA DE NOSOTROS CON GRID*-----------------*/
+
+.exteriorDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.titlePerfil{
+    font-family:'Barlow', sans-serif;
+    color: rgb(87,133,123);
+    font-weight: 600;
+    line-height: 0.4;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.exteriorDiv p{
+    font-family:'Barlow', sans-serif;
+    font-size: 20px;
+}
+
+.itemGaleria {
+    position: relative;
+}
+
+.imgExterior{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__title {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+.itemGaleria:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.itemGaleria:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.itemGaleria:nth-child(9) {
+    grid-column-start: span 2;
+}
+
+
+/*----------------CONTACTO---------------*/
+
+.formularioSection{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(62, 119, 107, 0.747), rgba(69, 94, 31, 0.644));
+}
+
+
+.formularioDiv{
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.692);
+    padding: 25px 30px;
+    border-radius: 5px;
+    background-image: url(../img-sobrenosotros/background-formu2.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    width: 100%;
+    height: 773px;
+
+}
+
+.formularioDiv .registerForm{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.formularioDiv .registerForm::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+}
+
+.formularioDiv form .userDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .userDetails .inputBox{
+    margin: 20px 0 12px 0;
+    width: calc(100% / 2 -20px);
+}
+
+.userDetails .inputBox .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.userDetails .inputBox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.075);
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+}
+
+.userDetails .inputBox input:focus,
+.userDetails .inputBox input:valid{
+    border-color: rgb(138,119,126)
+}
+
+
+form .generoDiv .generoTitulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .generoDiv .categoria{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.generoDiv .categoria label{
+    display: flex;
+    align-items: center;
+}
+
+.generoDiv .categoria .dot{
+    height: 18px;
+    width: 18px;
+    background: rgb(138,119,126);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .categoria label .una,
+#dot-2:checked ~ .categoria label .dos,
+#dot-3:checked ~ .categoria label .tres{
+    border-color: rgb(135,163,154);
+    background: rgb(53,86,77);
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+.containerContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.botonRegister{
+    border-radius: 10px;
+} 
+
+form .boton{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .boton input{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+}
+
+form .boton input:hover{
+    background: linear-gradient(-135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+}
+
+.iframeSection div iframe{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    
+}
+
+.divIframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-block-end: 10px;
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/**-----MEDIA QUERIES-----**/
+
+@media screen and (max-width:597px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:597px){
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        margin: 5px 15px 5px 15px;
+    }
+}
+
+@media screen and (max-width:1600px){   
+    .herodiv {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .herodiv h2 {
+        text-align: center;;
+    }
+    .imageContainer{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:675px){   
+    .herodiv h2, .herodiv p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*@media screen and (max-width:991px){
+    .navbar .navbar-expand-lg .navbar-light{
+    }
+}*/
+
+/**----GALERIA MEDIA QUERIES----*/
+
+@media screen and (max-width:1600px){
+    .containerGaleria{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:625px){
+    /*.galeriaInfo{
+
+    }  */  
+    .galeriaDiv{
+        text-align: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .galeriaInfo .galeriaDiv h2{
+        font-size: 30px;
+    }
+}
+
+
+
+
+/**-----------CUIDADOS -----------*/
+
+@media screen and (max-width:1000px){
+    .cuidadosSection{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        border-radius: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .cuidadosDiv{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:480px){
+    .cuidadosDiv img{
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+    margin-left: 15px;
+    }
+}
+
+/**------------PLANTAS DE INTERIOR MEDIA QUERIES--------*/
+
+@media screen and (max-width: 1600px){
+    .claseInterior{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/** -------------- ACERCA DE NOSOTROS MEDIA QUERIES -------------- */
+
+@media screen and (min-width: 768px) {
+    .exteriorDiv{
+    grid-template-columns: repeat(4, 1fr);
+    }
+    .itemGaleria:nth-child(3) {
+    grid-column-start: span 2;
+    }
+    .itemGaleria:nth-child(4) {
+    grid-column-start: span 3;
+    }
+    .itemGaleria:nth-child(5) {
+    grid-row-start: span 3;
+    }
+    .itemGaleria:nth-child(9) {
+    grid-column-start: span 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .exteriorDiv {
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: auto;
+    }
+    .itemGaleria:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    }
+    .itemGaleria:nth-child(4) {
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+    }
+}
+
+/**----------------CONTACTO MEDIA QUERIES---------------*/
+@media screen and (max-width:1500px){
+    .titlePerfil h1 p{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px){
+    .generoTitulo{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:650px){
+    .botonRegister{
+        width: 280px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:584px){
+    .formularioDiv{
+        max-width: 100%;
+    }
+
+    form .userDetails .inputBox{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .generoDiv .categoria{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .formularioDiv form .userDetails{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .userDetails::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
