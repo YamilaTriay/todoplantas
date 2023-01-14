@@ -98,8 +98,8 @@ div .imagenesTarjetas {
     background-color: rgba(42, 100, 84, 0.616);
     border-radius: 25px;
     margin: 50px auto h4;
-      margin-color: white;
-      margin-font-family: 'Nunito', sans-serif; }
+    color: white;
+    font-family: 'Nunito', sans-serif; }
     .containerGaleria .containerCardboard .imagenesTarjetas {
       width: 305px;
       height: 420px;
