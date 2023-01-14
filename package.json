@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-triayyamila",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Yamila</h1>\r - hello, all plants is my first project. [TodoPlantas](https://yamilatriay.github.io/todoplantas/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YamilaTriay/todoplantas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YamilaTriay/todoplantas/issues"
+  },
+  "homepage": "https://github.com/YamilaTriay/todoplantas#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

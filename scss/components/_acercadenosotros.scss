@@ -1,0 +1,39 @@
+/*------MAIN------*/
+
+
+.exteriorDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 20px;
+    grid-gap: 10px;
+    .titlePerfil{
+        font-family:'Barlow', sans-serif;
+        color: rgb(87,133,123);
+        font-weight: 600;
+        line-height: 0.4;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        text-align: center;
+    }
+    .itemGaleria{
+            position: relative;
+    .itemGaleria:nth-child(4){
+    grid-column-start: span 2;
+}
+.itemGaleria:nth-child(5){
+    grid-row-start: span 2;
+}
+.itemGaleria:nth-child(9){
+    grid-column-start: span 2;
+}
+        .imgExterior{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+        }
+    }
+}
+

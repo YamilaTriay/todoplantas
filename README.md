@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Yamila</h1>
 - hello, all plants is my first project. [TodoPlantas](https://yamilatriay.github.io/todoplantas/)
 
-- 🌱 I’m currently learning **I am currently learning web development and soon I will learn programming languages.**
+- 🌱 **I am currently learning web development and soon I will learn programming languages.**
 
 - 👨‍💻 All of my projects are available at [currently on github](currently on github)
 
