@@ -14,30 +14,36 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px; }
-  header nav div a {
+  header nav {
     padding-left: 20px;
     font-size: 40px;
     font-family: 'Barlow', sans-serif;
     font-weight: 700;
     color: #35564d; }
-  header nav div button {
-    margin-right: 5px; }
-  header nav div div ul {
-    list-style: none;
-    font-size: 18px;
-    padding-left: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    header nav div div ul a {
-      text-decoration: none;
-      color: #8a777e;
-      font-family: 'Nunito', sans-serif;
-      font-size: 20px;
+    header nav div .navbar-brand {
+      padding-left: 20px;
+      font-size: 40px;
+      font-family: 'Barlow', sans-serif;
       font-weight: 700;
-      margin: 10px 15px 10px 15px; }
-      header nav div div ul a:hover {
-        color: #086d57; }
+      color: #35564d; }
+    header nav div button {
+      margin-right: 5px; }
+    header nav div div ul {
+      list-style: none;
+      font-size: 18px;
+      padding-left: 40px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      header nav div div ul .nav-link {
+        text-decoration: none;
+        color: #8a777e;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 15px 10px 15px; }
+        header nav div div ul .nav-link:hover {
+          color: #086d57; }
 
 /*-------- INDEX MAIN--------*/
 .hero {

@@ -10,8 +10,13 @@ header{
     align-items: center;
     padding: 15px;
     nav{
+        padding-left: 20px;
+        font-size: 40px;
+        font-family:'Barlow', sans-serif; 
+        font-weight: 700;
+        color: rgb(53,86,77);
         div{
-            a{
+            .navbar-brand{
                 padding-left: 20px;
                 font-size: 40px;
                 font-family:'Barlow', sans-serif; 
@@ -29,7 +34,7 @@ header{
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-                    a{
+                    .nav-link{
                         text-decoration: none;
                         color: rgb(138,119,126);
                         font-family: 'Nunito', sans-serif;
