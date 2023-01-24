@@ -137,7 +137,7 @@ header {
   grid-template-rows: repeat(3, 1fr);
   gap: 60px;
   justify-items: center; }
-  .claseInterior .imgDiv {
+  .claseInterior .imgDiv .seccionCuidados {
     width: 400px;
     height: 400px; }
 
@@ -252,7 +252,7 @@ header {
   grid-auto-rows: 150px;
   padding: 20px;
   grid-gap: 10px; }
-  .exteriorDiv .titlePerfil {
+  .exteriorDiv .titleperfil {
     font-family: 'Barlow', sans-serif;
     color: #57857b;
     font-weight: 600;
@@ -264,16 +264,16 @@ header {
     text-align: center; }
   .exteriorDiv .itemGaleria {
     position: relative; }
+    .exteriorDiv .itemGaleria .imgExterior {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
     .exteriorDiv .itemGaleria .itemGaleria:nth-child(4) {
       grid-column-start: span 2; }
     .exteriorDiv .itemGaleria .itemGaleria:nth-child(5) {
       grid-row-start: span 2; }
     .exteriorDiv .itemGaleria .itemGaleria:nth-child(9) {
       grid-column-start: span 2; }
-    .exteriorDiv .itemGaleria .imgExterior {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
 
 /*------MAIN------*/
 .formularioSection {
@@ -298,27 +298,27 @@ header {
       font-size: 25px;
       font-weight: 500;
       position: relative; }
-      .formularioSection .formularioDiv .registerForm .registerForm::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 3px;
-        width: 30px;
-        background: linear-gradient(135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
+    .formularioSection .formularioDiv .formularioDiv .registerForm::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 30px;
+      background: linear-gradient(135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
     .formularioSection .formularioDiv form .userDetails {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 20px 0 12px 0; }
-      .formularioSection .formularioDiv form .userDetails .inputbox {
+      .formularioSection .formularioDiv form .userDetails .inputBox {
         margin: 20px 0 12px 0;
         width: calc(100% / 2 -20px); }
-        .formularioSection .formularioDiv form .userDetails .inputbox .details {
+        .formularioSection .formularioDiv form .userDetails .inputBox .details {
           display: block;
           font-weight: 500;
           margin-bottom: 5px; }
-        .formularioSection .formularioDiv form .userDetails .inputbox input {
+        .formularioSection .formularioDiv form .userDetails .inputBox input {
           height: 45px;
           width: 100%;
           outline: none;
@@ -328,70 +328,59 @@ header {
           font-size: 16px;
           border-bottom-width: 3px;
           transition: all 0.3s ease; }
-
-.userDetails .inputBox input:focus,
-.userDetails .inputBox input:valid {
-  border-color: #8a777e; }
-
-.generoDiv form input[type="radio"] {
-  display: none; }
-
-.generoDiv .generoTitulo {
-  font-size: 20px;
-  font-weight: 500; }
-
-.generoDiv .categoria {
-  display: flex;
-  width: 80%;
-  margin: 14px 0;
-  justify-content: space-between; }
-  .generoDiv .categoria label {
-    display: flex;
-    align-items: center; }
-    .generoDiv .categoria label .dot {
-      height: 18px;
-      width: 18px;
-      background: #8a777e;
-      border-radius: 50%;
-      margin-right: 10px;
-      border: 5px solid transparent;
-      transition: all 0.3s ease; }
-    .generoDiv .categoria label #dot-1:checked ~ .categoria label .una,
-    .generoDiv .categoria label #dot-2:checked ~ .categoria label .dos,
-    .generoDiv .categoria label #dot-3:checked ~ .categoria label .tres {
-      border-color: #87a39a;
-      background: #35564d; }
-    .generoDiv .categoria label form input[type="radio"] {
-      display: none; }
-
-.containerContacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .containerContacto .botonRegister {
-    border-radius: 10px; }
-
-.boton {
-  height: 45px;
-  margin: 45px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .boton input {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    outline: none;
-    color: #fff;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
-    .boton input:hover {
-      background: linear-gradient(-135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
+        .formularioSection .formularioDiv form .userDetails .inputBox .userDetails .inputBox input:focus,
+        .formularioSection .formularioDiv form .userDetails .inputBox .userDetails .inputBox input:valid {
+          border-color: #8a777e; }
+    .formularioSection .formularioDiv form .generoTitulo {
+      font-size: 20px;
+      font-weight: 500; }
+    .formularioSection .formularioDiv form .categoria {
+      display: flex;
+      width: 80%;
+      margin: 14px 0;
+      justify-content: space-between; }
+      .formularioSection .formularioDiv form .categoria label {
+        display: flex;
+        align-items: center; }
+        .formularioSection .formularioDiv form .categoria label .dot {
+          height: 18px;
+          width: 18px;
+          background: #8a777e;
+          border-radius: 50%;
+          margin-right: 10px;
+          border: 5px solid transparent;
+          transition: all 0.3s ease; }
+        .formularioSection .formularioDiv form .categoria label #dot-1:checked ~ .categoria label .una,
+        .formularioSection .formularioDiv form .categoria label #dot-2:checked ~ .categoria label .dos,
+        .formularioSection .formularioDiv form .categoria label #dot-3:checked ~ .categoria label .tres {
+          border-color: #87a39a;
+          background: #35564d; }
+        .formularioSection .formularioDiv form .categoria label form input[type="radio"] {
+          display: none; }
+    .formularioSection .formularioDiv .containerContacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .formularioSection .formularioDiv .containerContacto .botonRegister {
+        border-radius: 10px; }
+    .formularioSection .formularioDiv .boton {
+      height: 45px;
+      margin: 45px 0; }
+      .formularioSection .formularioDiv .boton input {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
+        .formularioSection .formularioDiv .boton input:hover {
+          background: linear-gradient(-135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
 
 .iframeSection .divIframe {
   display: flex;

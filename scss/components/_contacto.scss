@@ -22,7 +22,8 @@
             font-size: 25px;
             font-weight: 500;
             position: relative;
-        .registerForm::before{
+        }
+        .formularioDiv .registerForm::before{
             content: '';
             position: absolute;
             left: 0;
@@ -31,14 +32,13 @@
             width: 30px;
             background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
         }
-        }
         form{
             .userDetails{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 margin: 20px 0 12px 0;
-                .inputbox{
+                .inputBox{
                     margin: 20px 0 12px 0;
                     width: calc(100% / 2 -20px);
                     .details{
@@ -57,89 +57,79 @@
                         border-bottom-width: 3px;
                         transition: all 0.3s ease;
                     }
+                    .userDetails .inputBox input:focus,
+                    .userDetails .inputBox input:valid{
+                    border-color: rgb(138,119,126)
+                    }
+                }
+            }
+                .generoTitulo{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                .categoria{
+                    display: flex;
+                    width: 80%;
+                    margin: 14px 0;
+                    justify-content: space-between;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        .dot{
+                            height: 18px;
+                            width: 18px;
+                            background: rgb(138,119,126);
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            border: 5px solid transparent;
+                            transition: all 0.3s ease;
+                        }
+                        #dot-1:checked ~ .categoria label .una,
+                        #dot-2:checked ~ .categoria label .dos,
+                        #dot-3:checked ~ .categoria label .tres{
+                        border-color: rgb(135,163,154);
+                        background: rgb(53,86,77);
+                    }
+                    form input[type="radio"]{
+                        display: none;
+                    }
+                    }
+                }
+            }
+                .containerContacto{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    .botonRegister{
+                        border-radius: 10px;
+                    }
+                }
+                .boton{
+                    height: 45px;
+                    margin: 45px 0;
+                    input{
+                        height: 100%;
+                        width: 50%;
+                        display: flex;
+                        justify-content: center;
+                        outline: none;
+                        color: #fff;
+                        border: none;
+                        font-size: 18px;
+                        font-weight: 500;
+                        border-radius: 10px;
+                        letter-spacing: 1px;
+                        background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+                        &:hover{
+                            background: linear-gradient(-135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+                        }
+                    }
                 }
             }
         }
-    }
-}
-.userDetails .inputBox input:focus,
-.userDetails .inputBox input:valid{
-    border-color: rgb(138,119,126)
-}
+    
 
-.generoDiv{
-    form input[type="radio"]{
-        display: none;
-    }
-    .generoTitulo{
-        font-size: 20px;
-        font-weight: 500;
-    }
-    .categoria{
-        display: flex;
-        width: 80%;
-        margin: 14px 0;
-        justify-content: space-between;
 
-        label{
-            display: flex;
-            align-items: center;
-
-        .dot{
-            height: 18px;
-            width: 18px;
-            background: rgb(138,119,126);
-            border-radius: 50%;
-            margin-right: 10px;
-            border: 5px solid transparent;
-            transition: all 0.3s ease;
-            }
-        #dot-1:checked ~ .categoria label .una,
-        #dot-2:checked ~ .categoria label .dos,
-        #dot-3:checked ~ .categoria label .tres{
-        border-color: rgb(135,163,154);
-        background: rgb(53,86,77);
-        }
-            form input[type="radio"]{
-                display: none;
-            }
-        }
-    }
-}
-
-.containerContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .botonRegister{
-        border-radius: 10px;
-    }
-}
-
-.boton{
-    height: 45px;
-    margin: 45px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    input{
-        height: 100%;
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        outline: none;
-        color: #fff;
-        border: none;
-        font-size: 18px;
-        font-weight: 500;
-        border-radius: 10px;
-        letter-spacing: 1px;
-        background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
-        &:hover{
-            background: linear-gradient(-135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
-        }
-    }
-}
 
 .iframeSection{
     .divIframe{
