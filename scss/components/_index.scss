@@ -1,4 +1,4 @@
-/*--------MAIN--------*/
+/*-------- INDEX MAIN--------*/
 
 .hero{
     width: 100%;
@@ -9,7 +9,7 @@
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    .heroDiv{
+    .herodiv{
         width: 600px;
         height: auto;
         position: absolute;
@@ -19,15 +19,14 @@
         display: flex;
         flex-direction: column;
         h2{
-        font-family: 'EB Garamond', serif;
-        color: aliceblue;
-        text-align: left;
-        margin: 0 0;
-        font-size: xx-large;
+            font-family: 'EB Garamond', serif;
+            color: aliceblue;
+            text-align: left;
+            margin: 0 0;
+            font-size: xx-large;
         }
     }
 }
-
 .imageContainer{
     width: 100%;
     height: 100%;
@@ -42,19 +41,17 @@
             text-align: center;
             color: rgb(53,86,77);
             font-size: 1.50rem;
+            &:hover{
+                color: rgb(87,133,123);
+            }
         }
         .imagenesTarjetas{
             width: 310px;
             height: 465px;
+            &:hover{
+                opacity: 0.7;
+            }
         }
     }
-}
 
-div{
-    .subtitulos{
-        color: rgb(87,133,123);
-    }
-    .imagenesTarjetas{
-        opacity: 0.7;
-    }
 }
