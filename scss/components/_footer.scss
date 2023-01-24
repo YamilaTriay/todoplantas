@@ -1,29 +1,25 @@
 /*-------FOOTER-------*/
 
-footer{
-    background-color: rgb(193,217,212);
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    footer .contacto{
-            footer .contacto p{
+footer {
+    .contacto{
+        background-color: rgb(193,217,212);
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        p{
             display: flex;
             justify-content: center;
             position: relative;
             top: 20px;
             left: 70px;
-            }
-            footer .contacto div{
-                footer .contacto div a{
+        }
+        div{
+            .logos{
                 width: 40px;
                 height: 40px;
                 position: relative;
                 top: 50px;
                 right: 80px;
-                }
-                footer .contacto div a .logos{
-                width: 40px;
-                height: 40px;
             }
         }
     }

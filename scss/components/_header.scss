@@ -9,37 +9,38 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    .navbar navbar-expand-lg navbar-light{
-        .container-fluid{
-            .navbar-brand{
+    nav{
+        div{
+            a{
                 padding-left: 20px;
                 font-size: 40px;
                 font-family:'Barlow', sans-serif; 
                 font-weight: 700;
-                color: rgb(53,86,77)
+                color: rgb(53,86,77);
+            }
+            button{
+                margin-right:5px;
+            }
+            div{
+                ul{
+                    list-style: none;
+                    font-size: 18px;
+                    padding-left: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    a{
+                        text-decoration: none;
+                        color: rgb(138,119,126);
+                        font-family: 'Nunito', sans-serif;
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin: 10px 15px 10px 15px;
+                        &:hover{
+                            color: rgb(8, 109, 87);
+                        }
                     }
                 }
-            }
-        }
-
-
-.collapse navbar-collapse top_nav{
-    .navbar-nav mx-auto{
-        list-style: none;
-        font-size: 18px;
-        padding-left: 40px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .nav-link{
-            text-decoration: none;
-            color: rgb(138,119,126);
-            font-family: 'Nunito', sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            margin: 10px 15px 10px 15px;
-            &:hover{
-                color: rgb(8, 109, 87);
             }
         }
     }

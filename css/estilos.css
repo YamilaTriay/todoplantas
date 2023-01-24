@@ -4,6 +4,41 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*---------HEADER--------*/
+header {
+  background-color: #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; }
+  header nav div a {
+    padding-left: 20px;
+    font-size: 40px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #35564d; }
+  header nav div button {
+    margin-right: 5px; }
+  header nav div div ul {
+    list-style: none;
+    font-size: 18px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    header nav div div ul a {
+      text-decoration: none;
+      color: #8a777e;
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 10px 15px 10px 15px; }
+      header nav div div ul a:hover {
+        color: #086d57; }
+
 /*--------MAIN--------*/
 .hero {
   width: 100%;
@@ -98,8 +133,8 @@ div .imagenesTarjetas {
     background-color: rgba(42, 100, 84, 0.616);
     border-radius: 25px;
     margin: 50px auto h4;
-    color: white;
-    font-family: 'Nunito', sans-serif; }
+      margin-color: white;
+      margin-font-family: 'Nunito', sans-serif; }
     .containerGaleria .containerCardboard .imagenesTarjetas {
       width: 305px;
       height: 420px;
@@ -367,6 +402,25 @@ div h3 {
     border-radius: 15px;
     margin-bottom: 10px;
     display: flex; }
+
+/*-------FOOTER-------*/
+footer .contacto {
+  background-color: #c1d9d4;
+  display: flex;
+  justify-content: center;
+  height: 100px; }
+  footer .contacto p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    left: 70px; }
+  footer .contacto div .logos {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    right: 80px; }
 
 /*------INDEX------*/
 @media screen and (max-width: 597px) {
