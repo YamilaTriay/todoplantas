@@ -332,7 +332,8 @@ header {
       font-weight: 500; }
     .formularioSection .formularioDiv form .categoria {
       display: flex;
-      align-items: center;
+      width: 80%;
+      margin: 14px 0;
       justify-content: space-between; }
       .formularioSection .formularioDiv form .categoria label {
         display: flex;
