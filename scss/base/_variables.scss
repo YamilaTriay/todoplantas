@@ -1,0 +1,26 @@
+//! VARIABLES
+
+
+$color-principal: blue;
+$color-secundario: red;
+
+//! LISTAS
+
+$colores:
+red,
+green,
+blue,
+tomato,
+rgb(50, 104, 89),
+gray;
+
+$font-size:
+12px,
+16px,
+20px,
+40px;
+
+h1{
+    font-size: nth($font-size , 4);
+    color: nth($colores , 5);
+}
