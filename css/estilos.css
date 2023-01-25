@@ -434,7 +434,7 @@ footer .contacto {
     transform: translate(-50%, -50%); }
   main .hero .herodiv h2 {
     text-align: center; }
-  .hero .heroDiv .imageContainer {
+  .imageContainer {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 675px) {
