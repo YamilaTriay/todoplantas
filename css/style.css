@@ -662,6 +662,11 @@ form .boton input:hover{
 
 
 /**-----------CUIDADOS -----------*/
+@media screen and (max-width:1200px){
+    .imagenCuidados{
+        flex-wrap: wrap;
+    }
+}
 
 @media screen and (max-width:1000px){
     .cuidadosSection{
@@ -671,6 +676,7 @@ form .boton input:hover{
         border-radius: auto;
         margin-left: 25px;
         margin-right: 25px;
+        align-items: center;
     }
     .cuidadosDiv{
         width: auto;
@@ -678,10 +684,9 @@ form .boton input:hover{
     }
 }
 
+
 @media screen and (max-width:480px){
     .cuidadosDiv img{
-    width: 250px;
-    height: 250px;
     padding-top: 20px;
     margin-left: 15px;
     }
@@ -697,10 +702,6 @@ form .boton input:hover{
         padding: 20px;
         grid-gap: 10px
     }
-}
-
-@media screen and (max-width:1000px){
-
 }
 
 

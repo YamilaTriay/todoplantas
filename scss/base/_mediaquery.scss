@@ -71,6 +71,12 @@
 
 
 /**-----------CUIDADOS -----------*/
+@media screen and (max-width:1200px){
+    .imagenCuidados{
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+}
 
 @media screen and (max-width:1000px){
     .cuidadosSection{
@@ -80,6 +86,7 @@
         border-radius: auto;
         margin-left: 25px;
         margin-right: 25px;
+        align-items: center;
     }
     .cuidadosDiv{
         width: auto;
