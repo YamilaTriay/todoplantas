@@ -144,7 +144,7 @@
 
 @media screen and (min-width: 768px) {
     .exteriorDiv{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     }
     .itemGaleria:nth-child(3) {
     grid-column-start: span 2;
