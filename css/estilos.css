@@ -332,8 +332,7 @@ header {
       font-weight: 500; }
     .formularioSection .formularioDiv form .categoria {
       display: flex;
-      width: 80%;
-      margin: 14px 0;
+      align-items: center;
       justify-content: space-between; }
       .formularioSection .formularioDiv form .categoria label {
         display: flex;
@@ -361,7 +360,8 @@ header {
         border-radius: 10px; }
     .formularioSection .formularioDiv .boton {
       height: 45px;
-      margin: 45px 0; }
+      margin: 45px 0;
+      margin-left: 32%; }
       .formularioSection .formularioDiv .boton input {
         height: 100%;
         width: 50%;
@@ -530,7 +530,11 @@ footer .contacto {
 @media screen and (max-width: 700px) {
   .generoTitulo {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  input {
+    align-items: center;
+    width: 280px;
+    height: auto; } }
 
 @media screen and (max-width: 650px) {
   .botonRegister {
@@ -555,4 +559,4 @@ footer .contacto {
 @media screen and (max-width: 450px) {
   .iframeContacto {
     width: 300px;
-    height: 200px; } }
+    height: auto; } }

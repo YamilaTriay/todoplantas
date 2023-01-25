@@ -759,6 +759,13 @@ form .boton input:hover{
 }
 
 @media screen and (max-width:700px){
+    div .boton{
+        align-items: center;
+
+    }
+}
+
+@media screen and (max-width:700px){
     .generoTitulo{
         display: flex;
         flex-direction: column;
