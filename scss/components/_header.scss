@@ -22,6 +22,9 @@ header{
                 font-family:'Barlow', sans-serif; 
                 font-weight: 700;
                 color: rgb(51, 105, 91);
+                &:hover{
+                    color: rgb(87,133,123);
+                }
             }
             button{
                 margin-right:5px;
@@ -41,9 +44,6 @@ header{
                         font-size: 20px;
                         font-weight: 700;
                         margin: 10px 15px 10px 15px;
-                        &:hover{
-                            color: rgb(8, 109, 87);
-                        }
                     }
                 }
             }

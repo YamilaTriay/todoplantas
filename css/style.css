@@ -641,10 +641,7 @@ form .boton input:hover{
 }
 
 
-@media screen and (max-width:625px){
-    /*.galeriaInfo{
-
-    }  */  
+@media screen and (max-width:625px){ 
     .galeriaDiv{
         text-align: center;
         width: 100%;

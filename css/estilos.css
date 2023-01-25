@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100%; }
+
 /*---------HEADER--------*/
 header {
   background-color: #eeeeee;
@@ -26,6 +31,8 @@ header {
       font-family: 'Barlow', sans-serif;
       font-weight: 700;
       color: #33695b; }
+      header nav div .navbar-brand:hover {
+        color: #57857b; }
     header nav div button {
       margin-right: 5px; }
     header nav div div ul {
@@ -42,8 +49,6 @@ header {
         font-size: 20px;
         font-weight: 700;
         margin: 10px 15px 10px 15px; }
-        header nav div div ul .nav-link:hover {
-          color: #086d57; }
 
 /*-------- INDEX MAIN--------*/
 .hero {
@@ -492,18 +497,6 @@ footer .contacto {
     flex-wrap: wrap; } }
 
 /** -------------- ACERCA DE NOSOTROS MEDIA QUERIES -------------- */
-@media screen and (min-width: 768px) {
-  .exteriorDiv {
-    grid-template-columns: repeat(4, 1fr); }
-  .itemGaleria:nth-child(3) {
-    grid-column-start: span 2; }
-  .itemGaleria:nth-child(4) {
-    grid-column-start: span 3; }
-  .itemGaleria:nth-child(5) {
-    grid-row-start: span 3; }
-  .itemGaleria:nth-child(9) {
-    grid-column-start: span 3; } }
-
 @media screen and (min-width: 1024px) {
   .exteriorDiv {
     grid-template-columns: repeat(5, 1fr);
@@ -515,6 +508,18 @@ footer .contacto {
   .itemGaleria:nth-child(4) {
     grid-column-start: span 3;
     grid-row-start: span 3; } }
+
+@media screen and (min-width: 768px) {
+  .exteriorDiv {
+    grid-template-columns: repeat(4, 1fr); }
+  .itemGaleria:nth-child(3) {
+    grid-column-start: span 2; }
+  .itemGaleria:nth-child(4) {
+    grid-column-start: span 3; }
+  .itemGaleria:nth-child(5) {
+    grid-row-start: span 3; }
+  .itemGaleria:nth-child(9) {
+    grid-column-start: span 3; } }
 
 /**----------------CONTACTO MEDIA QUERIES---------------*/
 @media screen and (max-width: 1500px) {
