@@ -89,7 +89,8 @@ header {
         color: #57857b; }
     .imageContainer div .imagenesTarjetas {
       width: 310px;
-      height: 465px; }
+      height: 465px;
+      border-radius: 15px; }
       .imageContainer div .imagenesTarjetas:hover {
         opacity: 0.7; }
 
@@ -160,23 +161,20 @@ header {
     left: 20%;
     font-size: 45px; }
 
-.galeriaInfo p {
-  margin-bottom: 30px;
-  font-size: 20px;
-  text-align: center; }
-
-.galeriaInfo a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 10px; }
-
 .containerGaleria {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px; }
+  .containerGaleria .containerGaleria div {
+    border: 1px solid gray;
+    width: 450px;
+    height: 640px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    display: inline-block; }
   .containerGaleria .containerCardboard {
     display: flex;
     justify-content: center;
@@ -195,17 +193,10 @@ header {
       border-radius: 15px;
       margin-bottom: 10px; }
     .containerGaleria .containerCardboard .parrafoGaleria {
-      color: white;
-      text-align: center; }
-
-.containerGaleria div {
-  border: 1px solid gray;
-  width: 450px;
-  height: 640px;
-  padding: 20px;
-  text-align: center;
-  margin: 20px;
-  display: inline-block; }
+      margin-bottom: 30px;
+      font-size: 20px;
+      text-align: center;
+      color: white; }
 
 .plantasExterior {
   width: 100%;
