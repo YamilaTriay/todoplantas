@@ -2,7 +2,6 @@
 
 .formularioSection{
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -121,6 +120,8 @@
                         border-radius: 10px;
                         letter-spacing: 1px;
                         background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+                        position: relative;
+                        bottom: 30px;
                         &:hover{
                             background: linear-gradient(-135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
                         }

@@ -126,6 +126,24 @@
 
 
 /** -------------- ACERCA DE NOSOTROS MEDIA QUERIES -------------- */
+@media screen and (min-width: 768px) {
+    .exteriorDiv{
+    grid-template-columns: repeat(4, 1fr);
+    }
+    .itemGaleria:nth-child(3) {
+    grid-column-start: span 2;
+    }
+    .itemGaleria:nth-child(4) {
+    grid-column-start: span 3;
+    }
+    .itemGaleria:nth-child(5) {
+    grid-row-start: span 3;
+    }
+    .itemGaleria:nth-child(9) {
+    grid-column-start: span 3;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .exteriorDiv {
     grid-template-columns: repeat(5, 1fr);
@@ -142,23 +160,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .exteriorDiv{
-    grid-template-columns: repeat(5, 1fr);
-    }
-    .itemGaleria:nth-child(3) {
-    grid-column-start: span 2;
-    }
-    .itemGaleria:nth-child(4) {
-    grid-column-start: span 3;
-    }
-    .itemGaleria:nth-child(5) {
-    grid-row-start: span 3;
-    }
-    .itemGaleria:nth-child(9) {
-    grid-column-start: span 3;
-    }
-}
+
 
 
 
@@ -178,7 +180,6 @@
     }
     input{
         align-items: center;
-        width: 280px;
         height: auto;
     }
 }
@@ -217,9 +218,9 @@
     }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:400px){
     .iframeContacto{
-        width: 300px;
+        width: 200px;
         height: auto;
     }
 }
