@@ -207,13 +207,14 @@ footer img{
 
 
 .containerCardboard{
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: auto;
+    width: 450px;
+    height: 640px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
     background-color: rgba(42, 100, 84, 0.616);
-    border-radius:25px;
-    margin: 50px auto
+    border-radius: 25px;
+    text-align: center;
 }
 
 .imagenesTarjetas{
@@ -234,15 +235,6 @@ footer img{
     padding-right: 20px;
 }
 
-
-.containerCardboard{
-    width: 450px;
-    height: 640px;
-    padding: 20px;
-    text-align: center;
-    margin: 20px;
-    display: inline-block;
-}
 
 .containerGaleria div h4{
     color: white;

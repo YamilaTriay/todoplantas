@@ -7,10 +7,10 @@ $color-secundario: red;
 //! LISTAS
 
 $colores:
-red,
-green,
-blue,
-tomato,
+rgb(87, 133, 123),
+rgb(148, 129, 136),
+rgb(94, 85, 88),
+rgb(196, 182, 180),
 rgb(50, 104, 89),
 gray;
 
@@ -20,7 +20,14 @@ $font-size:
 20px,
 40px;
 
+$font-weight:
+500,
+700,
+800,
+900;
+
 h1{
     font-size: nth($font-size , 4);
     color: nth($colores , 5);
+    font-weight: nth($font-weight , 2);
 }

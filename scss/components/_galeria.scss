@@ -1,6 +1,111 @@
 /*------MAIN-------*/
 
-.galeriaInfo{
+// .galeriaInfo{
+//     width: 100%;
+//     height: 90vh;
+//     color: aliceblue;
+//     background-image: url("../img/interiorbackground.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//     .galeriaDiv h2{
+//             font-family: 'EB Garamond', serif;
+//             color: aliceblue;
+//             font-weight: 800;
+//             position: absolute;
+//             top: 60%;
+//             left: 20%;
+//             font-size: 45px;
+//         }
+//     }
+// .containerGaleria{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     .containerGaleria div{
+//         border: 1px solid gray;
+//         width: 450px;
+//         height: 640px;
+//         padding: 20px;
+//         text-align: center;
+//         margin: 20px;
+//         display: inline-block;
+//     }
+//     .containerCardboard{
+//         display: flex;
+//         justify-content: center;
+//         width: 600px;
+//         height: auto;
+//         background-color: rgba(42, 100, 84, 0.616);
+//         border-radius:25px;
+//         margin: 50px auto
+//         h4{
+//             color: white;
+//             font-family: 'Nunito', sans-serif;
+//         }
+//         .imagenesTarjetas{
+//             width: 305px;
+//             height: 420px;
+//             margin: auto;
+//             margin-top: 20px;
+//             border-radius: 15px;
+//             margin-bottom: 10px;
+//         }
+//         .parrafoGaleria{
+//             margin-bottom: 30px;
+//             font-size: 20px;
+//             text-align: center;
+//             color: white;
+//         }
+//     }
+// }
+// .plantasExterior{
+//     width: 100%;
+//     height: 80vh;
+//     color: rgb(138,119,126);
+//     text-align: center;
+//     background-image: url("../img/outside.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//     div{
+//         padding: 310px;
+//         color: aliceblue;
+//         h2{
+//             color: aliceblue;
+//             font-weight: 700;
+//             position: relative;
+//             top: 95px;
+//             font-size: 32px;
+//         }
+//     }
+// }
+// .cactusySuculentas{
+//     width: 100%;
+//     height: 80vh;
+//     color: rgb(138,119,126);
+//     text-align: center;
+//     background-image: url("../img/suculentdecoration.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//     div{
+//         padding: 150px;
+//         h2{
+//             font-weight: 700;
+//             position: relative;
+//             top: 95px;
+//             font-size: 32px;
+//         }
+//     }
+// }
+
+.galeriaInfo {
     width: 100%;
     height: 90vh;
     color: aliceblue;
@@ -9,7 +114,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    .galeriaDiv h2{
+    .galeriaDiv{
+        h2{
             font-family: 'EB Garamond', serif;
             color: aliceblue;
             font-weight: 800;
@@ -19,29 +125,22 @@
             font-size: 45px;
         }
     }
+}
 .containerGaleria{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    .containerGaleria div{
-        border: 1px solid gray;
+    .containerCardboard{
         width: 450px;
         height: 640px;
         padding: 20px;
-        text-align: center;
         margin: 20px;
         display: inline-block;
-    }
-    .containerCardboard{
-        display: flex;
-        justify-content: center;
-        width: 600px;
-        height: auto;
         background-color: rgba(42, 100, 84, 0.616);
-        border-radius:25px;
-        margin: 50px auto
+        border-radius: 25px;
+        text-align: center;
         h4{
             color: white;
             font-family: 'Nunito', sans-serif;
@@ -56,7 +155,7 @@
         }
         .parrafoGaleria{
             margin-bottom: 30px;
-            font-size: 20px;
+            font-size: 18px;
             text-align: center;
             color: white;
         }

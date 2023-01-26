@@ -26,6 +26,11 @@ header{
                     color: rgb(87,133,123);
                 }
             }
+            h1{
+                &:hover{
+                    color: rgb(148, 129, 136);
+                }
+            }
             button{
                 margin-right:5px;
             }

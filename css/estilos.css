@@ -11,7 +11,8 @@ body {
 
 h1 {
   font-size: 40px;
-  color: #326859; }
+  color: #326859;
+  font-weight: 700; }
 
 /*---------HEADER--------*/
 header {
@@ -37,6 +38,8 @@ header {
       color: #33695b; }
       header nav div .navbar-brand:hover {
         color: #57857b; }
+    header nav div h1:hover {
+      color: #948188; }
     header nav div button {
       margin-right: 5px; }
     header nav div div ul {
@@ -176,24 +179,18 @@ header {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px; }
-  .containerGaleria .containerGaleria div {
-    border: 1px solid gray;
+  .containerGaleria .containerCardboard {
     width: 450px;
     height: 640px;
     padding: 20px;
-    text-align: center;
     margin: 20px;
-    display: inline-block; }
-  .containerGaleria .containerCardboard {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: auto;
+    display: inline-block;
     background-color: rgba(42, 100, 84, 0.616);
     border-radius: 25px;
-    margin: 50px auto h4;
-      margin-color: white;
-      margin-font-family: 'Nunito', sans-serif; }
+    text-align: center; }
+    .containerGaleria .containerCardboard h4 {
+      color: white;
+      font-family: 'Nunito', sans-serif; }
     .containerGaleria .containerCardboard .imagenesTarjetas {
       width: 305px;
       height: 420px;
@@ -203,7 +200,7 @@ header {
       margin-bottom: 10px; }
     .containerGaleria .containerCardboard .parrafoGaleria {
       margin-bottom: 30px;
-      font-size: 20px;
+      font-size: 18px;
       text-align: center;
       color: white; }
 
@@ -249,13 +246,12 @@ header {
 .titlePerfil {
   font-family: 'Barlow', sans-serif;
   color: #8a777e;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 0.4;
   margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   text-align: center; }
+  .titlePerfil:hover {
+    color: #326859; }
 
 .exteriorDiv {
   display: grid;

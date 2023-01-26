@@ -4,13 +4,13 @@
 .titlePerfil{
         font-family:'Barlow', sans-serif;
         color: rgb(138,119,126);
-        font-weight: 600;
+        font-weight: 700;
         line-height: 0.4;
         margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
         text-align: center;
+        &:hover{
+            color: rgb(50, 104, 89);
+        }
 }
 .exteriorDiv{
     display: grid;
