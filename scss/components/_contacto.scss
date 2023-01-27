@@ -1,12 +1,10 @@
 /*------MAIN------*/
 
-.formularioSection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.formularioSection {
+    @extend %flex;
     padding: 10px;
     background: linear-gradient(135deg, rgba(62, 119, 107, 0.747), rgba(69, 94, 31, 0.644));
-    .formularioDiv{
+    .formularioDiv {
         max-width: 700px;
         width: 100%;
         background: rgba(255, 255, 255, 0.692);
@@ -17,35 +15,32 @@
         opacity: 0.7;
         width: 100%;
         height: 773px;
-        .registerForm{
+        .registerForm {
             font-size: 25px;
             font-weight: 500;
             position: relative;
         }
-        .formularioDiv .registerForm::before{
+        .formularioDiv .registerForm::before {
             content: '';
             position: absolute;
             left: 0;
             bottom: 0;
             height: 3px;
             width: 30px;
-            background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
+            background: linear-gradient(135deg, rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135, 163, 154));
         }
-        form{
-            .userDetails{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
+        form {
+            .userDetails {
                 margin: 20px 0 12px 0;
-                .inputBox{
+                .inputBox {
                     margin: 20px 0 12px 0;
                     width: calc(100% / 2 -20px);
-                    .details{
+                    .details {
                         display: block;
                         font-weight: 500;
                         margin-bottom: 5px;
                     }
-                    input{
+                    input {
                         height: 45px;
                         width: 100%;
                         outline: none;
@@ -57,97 +52,75 @@
                         transition: all 0.3s ease;
                     }
                     .userDetails .inputBox input:focus,
-                    .userDetails .inputBox input:valid{
-                    border-color: rgb(138,119,126)
+                    .userDetails .inputBox input:valid {
+                        border-color: rgb(138, 119, 126)
                     }
                 }
             }
-                .generoTitulo{
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-                .categoria{
+            .generoTitulo {
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .categoria {
+                display: flex;
+                width: 80%;
+                margin: 14px 0;
+                justify-content: space-between;
+                label {
                     display: flex;
-                    width: 80%;
-                    margin: 14px 0;
-                    justify-content: space-between;
-                    label{
-                        display: flex;
-                        align-items: center;
-                        .dot{
-                            height: 18px;
-                            width: 18px;
-                            background: rgb(138,119,126);
-                            border-radius: 50%;
-                            margin-right: 10px;
-                            border: 5px solid transparent;
-                            transition: all 0.3s ease;
-                        }
-                        #dot-1:checked ~ .categoria label .una,
-                        #dot-2:checked ~ .categoria label .dos,
-                        #dot-3:checked ~ .categoria label .tres{
-                        border-color: rgb(135,163,154);
-                        background: rgb(53,86,77);
+                    align-items: center;
+                    .dot {
+                        height: 18px;
+                        width: 18px;
+                        background: rgb(138, 119, 126);
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        border: 5px solid transparent;
+                        transition: all 0.3s ease;
                     }
-                    form input[type="radio"]{
+                    #dot-1:checked~.categoria label .una,
+                    #dot-2:checked~.categoria label .dos,
+                    #dot-3:checked~.categoria label .tres {
+                        border-color: rgb(135, 163, 154);
+                        background: rgb(53, 86, 77);
+                    }
+                    form input[type="radio"] {
                         display: none;
-                    }
-                    }
-                }
-            }
-                .containerContacto{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center; 
-                    .botonRegister{
-                        border-radius: 10px;
-                    }
-                }
-                .boton{
-                    height: 45px;
-                    margin: 45px 0;
-                    margin-left: 32%;
-                    input{
-                        height: 100%;
-                        width: 50%;
-                        display: flex;
-                        justify-content: center;
-                        outline: none;
-                        color: #fff;
-                        border: none;
-                        font-size: 18px;
-                        font-weight: 500;
-                        border-radius: 10px;
-                        letter-spacing: 1px;
-                        background: linear-gradient(135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
-                        position: relative;
-                        bottom: 30px;
-                        &:hover{
-                            background: linear-gradient(-135deg,rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135,163,154));
-                        }
                     }
                 }
             }
         }
-    
-
-
-
-.iframeSection{
-    .divIframe{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
-        padding-block-end: 10px;
-        .iframeContacto{
-            width: 400px;
-            height: 300px;
-            margin: auto;
-            margin-top: 20px;
-            border-radius: 15px;
-            margin-bottom: 10px;
+        .containerContacto {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            .botonRegister {
+                border-radius: 10px;
+            }
+        }
+        .boton {
+            height: 45px;
+            margin: 45px 0;
+            margin-left: 32%;
+            input {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                outline: none;
+                color: #fff;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 10px;
+                letter-spacing: 1px;
+                background: linear-gradient(135deg, rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135, 163, 154));
+                position: relative;
+                bottom: 30px;
+                &:hover {
+                    background: linear-gradient(-135deg, rgb(62, 119, 107), rgba(69, 94, 31, 0.644), rgb(135, 163, 154));
+                }
+            }
         }
     }
 }

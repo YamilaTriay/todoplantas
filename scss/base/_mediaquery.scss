@@ -52,7 +52,7 @@
 }
 
 
-@media screen and (max-width:625px){
+@media screen and (max-width:350px){
     .galeriaDiv{
         text-align: center;
         width: 100%;
@@ -71,19 +71,13 @@
 
 
 /**-----------CUIDADOS -----------*/
-@media screen and (max-width:1200px){
-    .imagenCuidados{
-        flex-wrap: wrap;
-        padding: 15px;
-    }
-}
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
     .cuidadosSection{
         width: auto;
         height: auto;
         flex-direction: column;
-        border-radius: auto;
+        border-radius: 35px;
         margin-left: 25px;
         margin-right: 25px;
         align-items: center;
@@ -92,14 +86,24 @@
         width: auto;
         height: auto;
     }
+    .cuidadosSection .cuidadosDiv .imagenCuidados {
+        padding: 15px;
+        border-radius: 35px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .cuidadosSection .cuidadosDiv .imagenCuidados {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media screen and (max-width:480px){
-    .cuidadosDiv img{
-    width: 250px;
-    height: 250px;
-    padding-top: 20px;
-    margin-left: 15px;
+    .cuidadosDiv .imagenCuidados{
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
     }
 }
 

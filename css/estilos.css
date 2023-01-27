@@ -14,6 +14,16 @@ h1 {
   color: #326859;
   font-weight: 700; }
 
+.formularioSection {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.userDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
 /*---------HEADER--------*/
 header {
   background-color: #dfdede;
@@ -124,16 +134,18 @@ header {
     align-items: center;
     padding-left: 10px; }
     .cuidadosSection .cuidadosDiv .imagenCuidados {
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
       border-radius: 15px; }
-  .cuidadosSection div h3 {
+  .cuidadosSection .tips-cuidados h3 {
     text-align: center;
-    margin-bottom: -20px;
-    font-family: 'Barlow', sans-serif; }
-  .cuidadosSection div .parrafoCuidados {
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 74px;
+    position: relative;
+    top: 50px; }
+  .cuidadosSection .tips-cuidados .parrafoCuidados {
     font-size: large; }
-  .cuidadosSection div .parrafoCuidados, .cuidadosSection div .cuidadosSection h3 {
+  .cuidadosSection .tips-cuidados .parrafoCuidados, .cuidadosSection .tips-cuidados .cuidadosSection h3 {
     display: flex;
     align-items: center;
     text-align: left;
@@ -277,9 +289,6 @@ header {
 
 /*------MAIN------*/
 .formularioSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   background: linear-gradient(135deg, rgba(62, 119, 107, 0.747), rgba(69, 94, 31, 0.644)); }
   .formularioSection .formularioDiv {
@@ -306,9 +315,6 @@ header {
       width: 30px;
       background: linear-gradient(135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
     .formularioSection .formularioDiv form .userDetails {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
       margin: 20px 0 12px 0; }
       .formularioSection .formularioDiv form .userDetails .inputBox {
         margin: 20px 0 12px 0;
@@ -384,21 +390,6 @@ header {
         .formularioSection .formularioDiv .boton input:hover {
           background: linear-gradient(-135deg, #3e776b, rgba(69, 94, 31, 0.644), #87a39a); }
 
-.iframeSection .divIframe {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 10px;
-  padding-block-end: 10px; }
-  .iframeSection .divIframe .iframeContacto {
-    width: 400px;
-    height: 300px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    display: flex; }
-
 /*-------FOOTER-------*/
 footer .contacto {
   background-color: #c1d9d4;
@@ -453,7 +444,7 @@ footer .contacto {
   .containerGaleria {
     flex-wrap: wrap; } }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 350px) {
   .galeriaDiv {
     text-align: center;
     width: 100%;
@@ -469,29 +460,31 @@ footer .contacto {
 
 /**-----------CUIDADOS -----------*/
 @media screen and (max-width: 1200px) {
-  .imagenCuidados {
-    flex-wrap: wrap;
-    padding: 15px; } }
-
-@media screen and (max-width: 1000px) {
   .cuidadosSection {
     width: auto;
     height: auto;
     flex-direction: column;
-    border-radius: auto;
+    border-radius: 35px;
     margin-left: 25px;
     margin-right: 25px;
     align-items: center; }
   .cuidadosDiv {
     width: auto;
-    height: auto; } }
+    height: auto; }
+  .cuidadosSection .cuidadosDiv .imagenCuidados {
+    padding: 15px;
+    border-radius: 35px; } }
+
+@media screen and (max-width: 500px) {
+  .cuidadosSection .cuidadosDiv .imagenCuidados {
+    width: 300px;
+    height: 300px; } }
 
 @media screen and (max-width: 480px) {
-  .cuidadosDiv img {
-    width: 250px;
-    height: 250px;
-    padding-top: 20px;
-    margin-left: 15px; } }
+  .cuidadosDiv .imagenCuidados {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px; } }
 
 /**---------------GALERIAS DENTRO DE CUIDADOS CON GRIDS---------*/
 @media screen and (max-width: 1600px) {
