@@ -41,6 +41,13 @@ h1{
     align-items: center;
 }
 
+%fuentesDetails {
+    font-weight: 700;
+    position: relative;
+    top: 95px;
+    font-size: 32px;
+}
+
 
 //! MIXIN
 
@@ -52,6 +59,19 @@ h1{
 
 .userDetails{
     @include flex (flex, wrap, space-between)
+}
+
+
+@mixin bg ($no-repeat, $cover, $center, $fixed,) {
+    background-repeat: $no-repeat;
+    background-size: $cover;
+    background-position: $center;
+    background-attachment: $fixed;
+
+}
+
+.galeriaInfo, .plantasExterior, .cactusySuculentas{
+    @include bg (no-repeat, cover, center, fixed)
 }
 
 //! MAPAS 

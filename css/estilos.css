@@ -19,10 +19,22 @@ h1 {
   justify-content: center;
   align-items: center; }
 
+.plantasExterior div h2, .cactusySuculentas div h2 {
+  font-weight: 700;
+  position: relative;
+  top: 95px;
+  font-size: 32px; }
+
 .userDetails {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+
+.galeriaInfo, .plantasExterior, .cactusySuculentas {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 /*---------HEADER--------*/
 header {
@@ -171,11 +183,7 @@ header {
   width: 100%;
   height: 90vh;
   color: aliceblue;
-  background-image: url("../img/interiorbackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+  background-image: url("../img/interiorbackground.jpg"); }
   .galeriaInfo .galeriaDiv h2 {
     font-family: 'EB Garamond', serif;
     color: aliceblue;
@@ -221,37 +229,18 @@ header {
   height: 80vh;
   color: #8a777e;
   text-align: center;
-  background-image: url("../img/outside.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+  background-image: url("../img/outside.jpg"); }
   .plantasExterior div {
     color: aliceblue; }
-    .plantasExterior div h2 {
-      color: aliceblue;
-      font-weight: 700;
-      position: relative;
-      top: 95px;
-      font-size: 32px; }
 
 .cactusySuculentas {
   width: 100%;
   height: 80vh;
   color: #8a777e;
   text-align: center;
-  background-image: url("../img/suculentdecoration.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+  background-image: url("../img/suculentdecoration.jpg"); }
   .cactusySuculentas div {
     padding: 150px; }
-    .cactusySuculentas div h2 {
-      font-weight: 700;
-      position: relative;
-      top: 95px;
-      font-size: 32px; }
 
 /*------MAIN------*/
 .titlePerfil {
