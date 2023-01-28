@@ -49,8 +49,9 @@
             width: 310px;
             height: 465px;
             border-radius: 15px;
+            transition: 2s;
             &:hover{
-                opacity: 0.7;
+                transform: rotateY(180deg);
             }
         }
     }
