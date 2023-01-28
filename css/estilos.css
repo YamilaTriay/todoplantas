@@ -139,7 +139,10 @@ header {
   border-radius: 45px;
   margin: 50px auto;
   padding: 30px;
-  color: aliceblue; }
+  color: aliceblue;
+  transition: 2s; }
+  .cuidadosSection:hover {
+    transform: scale(1.2); }
   .cuidadosSection .cuidadosDiv {
     display: flex;
     flex-direction: row;

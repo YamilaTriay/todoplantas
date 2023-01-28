@@ -11,6 +11,10 @@
     margin: 50px auto;
     padding: 30px;
     color: aliceblue;
+    transition: 2s;
+    &:hover{
+        transform: scale(1.2)
+    }
     .cuidadosDiv{
         display: flex;
         flex-direction: row;
