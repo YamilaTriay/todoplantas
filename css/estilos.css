@@ -142,7 +142,7 @@ header {
   color: aliceblue;
   transition: 2s; }
   .cuidadosSection:hover {
-    transform: scale(1.2); }
+    transform: scale(1.1); }
   .cuidadosSection .cuidadosDiv {
     display: flex;
     flex-direction: row;
@@ -392,14 +392,23 @@ footer .contacto {
     display: flex;
     justify-content: center;
     position: relative;
+    font-weight: 500;
     top: 20px;
-    left: 70px; }
+    left: 70px;
+    transition: 1s; }
+    footer .contacto p:hover {
+      color: #3a7467;
+      transform: scale(1.2); }
   footer .contacto div .logos {
     width: 40px;
     height: 40px;
     position: relative;
     top: 50px;
-    right: 80px; }
+    right: 80px;
+    transition: 1s; }
+    footer .contacto div .logos:hover {
+      transform: scale(1.1);
+      opacity: 0.5; }
 
 /*------INDEX------*/
 @media screen and (max-width: 597px) {
