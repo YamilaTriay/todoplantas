@@ -11,7 +11,7 @@ rgb(87, 133, 123),
 rgb(148, 129, 136),
 rgb(94, 85, 88),
 rgb(196, 182, 180),
-rgb(50, 104, 89),
+rgb(87,133,123),
 gray;
 
 
@@ -57,7 +57,7 @@ h1{
     justify-content: $space-between;
 }
 
-.userDetails{
+.userDetails, .collapse .navbar .navbar-nav{
     @include flex (flex, wrap, space-between)
 }
 
@@ -73,6 +73,4 @@ h1{
 .galeriaInfo, .plantasExterior, .cactusySuculentas{
     @include bg (no-repeat, cover, center, fixed)
 }
-
-//! MAPAS 
 
