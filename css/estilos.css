@@ -290,7 +290,6 @@ header {
     border-radius: 5px;
     background-image: url(../img-sobrenosotros/background-formu2.jpg);
     background-repeat: no-repeat;
-    opacity: 0.7;
     width: 100%;
     height: 773px; }
     .formularioSection .formularioDiv .registerForm {
@@ -353,6 +352,9 @@ header {
           background: #35564d; }
         .formularioSection .formularioDiv form .categoria label form input[type="radio"] {
           display: none; }
+        .formularioSection .formularioDiv form .categoria label .genero {
+          color: white;
+          font-weight: 500; }
     .formularioSection .formularioDiv .containerContacto {
       display: flex;
       flex-direction: column;

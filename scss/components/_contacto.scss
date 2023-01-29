@@ -12,7 +12,6 @@
         border-radius: 5px;
         background-image: url(../img-sobrenosotros/background-formu2.jpg);
         background-repeat: no-repeat;
-        opacity: 0.7;
         width: 100%;
         height: 773px;
         .registerForm {
@@ -86,6 +85,10 @@
                     }
                     form input[type="radio"] {
                         display: none;
+                    }
+                    .genero{
+                        color: white;
+                        font-weight: 500;
                     }
                 }
             }
